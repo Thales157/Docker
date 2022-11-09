@@ -1,5 +1,7 @@
 services:
-  nginx:aaaa
+  nginx:
     image: nginx:1.21
     ports:
       - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
